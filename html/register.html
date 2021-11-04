@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/register-style.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <title>Register</title>
+</head>
+
+<body>
+    <header class="mobile-header">
+        <img id="sandwich" src="/img/statistics.svg" alt="Sandwich-bar">
+        <nav>
+            <a href="#enter">
+                <h2>Belépés</h2>
+            </a>
+            <a href="#property">
+                <h2>Ingatlanok</h2>
+            </a>
+            <a href="#contact">
+                <h2>Kontakt</h2>
+            </a>
+            <a href="#call-boy">
+                <h2>Ügyintézés</h2>
+            </a>
+        </nav>
+        <div class="svg-wrapper">
+            <div class="header-svg-holder">
+                <img src="/img/like.svg" alt="like">
+            </div>
+            <div class="header-svg-holder">
+                <img src="/img/instagram.svg" alt="instagram">
+            </div>
+            <div class="header-svg-holder">
+                <img src="/img/mail.svg" alt="mail">
+            </div>
+        </div>
+    </header>
+    <header class="tablet-header">
+        <div class="transparent-black">
+            <h1>Moovsmart ingatlanbörze</h1>
+            <h2>Ingatlan keresés forró dróton</h2>
+        </div>
+    </header>
+
+    <main>
+        <section class="form-container">
+            <h1>Regisztráció</h1>
+            <form action="javascript:void(0)" name="form">
+                <label for="username">Felhasználónév:</label>
+                <input type="text" id="username" name="username">
+                <small class="error-username">Hibás felhasználónév!</small>
+
+                <label for="email">Email cím:</label>
+                <input type="email" id="email" name="email">
+                <small class="error-email">Hibás email cím!</small>
+
+                <label for="password">Jelszó:</label>
+                <input type="password" id="password" name="password">
+                <small class="error-password">Hibás Jelszó!</small>
+
+                <label for="re-password">Jelszó ismétlése:</label>
+                <input type="password" id="re-password" name="repassword">
+                <small class="error-re-password">Jelszavak nem egyeznek!</small>
+
+                <button type="button" disabled>Elküld</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-left">
+            <div class="one">
+                <h3 id="contact">Kapcsolat</h3>
+            </div>
+            <div class="two">
+                <div class="footer-svg-holder">
+                    <img src="/img/telephone.svg" alt="phone-icon">
+                </div>
+                <p>+36 99 1231 123</p>
+            </div>
+            <div class="three">
+                <div class="footer-svg-holder">
+                    <img src="/img/mail.svg" alt="mail-icon">
+                </div>
+                <p>moovsmart@mail.hu</p>
+            </div>
+            <div class="four">
+                <div class="footer-svg-holder">
+                    <img src="/img/like.svg" alt="like-icon">
+                </div>
+                <p><a href="#">facebook</a></p>
+            </div>
+            <div class="five">
+                <div class="footer-svg-holder">
+                    <img src="/img/house.svg" alt="house-icon">
+                </div>
+                <p>1098 Budapest Halom u. 99.</p>
+            </div>
+        </div>
+        <div class="six-holder">
+            <div class="six">
+                <svg>
+                <rect>
+    
+                </svg>
+            </div>
+        </div>
+        <div class="footer-right">
+            <div class="seven">
+                <h3>Adatvédelem és céges infó</h3>
+            </div>
+            <div class="eight">
+                <p>Elolvasom az adatvédelmi szabályzatot</p>
+            </div>
+            <div class="nine">
+                <p>Céges információ</p>
+            </div>
+            <div class="ten">
+                <p>Icons made by Gregor Cresnar from www.flaticon.com</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/validator.js"></script>
+</body>
+
+</html>

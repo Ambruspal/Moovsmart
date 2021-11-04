@@ -1,0 +1,61 @@
+main {
+    margin: 2% 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-holder {
+    width: 100%;
+    margin-bottom: 2%;
+    box-shadow: 1px 4px 4px 0 rgba(30, 30, 30, 0.3);
+}
+
+.img-holder {
+    padding: 0.7rem;
+}
+
+.text-holder {
+    text-align: center;
+    padding: 1rem;
+}
+
+img {
+    width: 100%;
+}
+
+h3 {
+    margin-bottom: 2%;
+}
+
+
+/* -------------------Tablet width------------------------- */
+
+@media only screen and (min-width: 600px) {
+    main {
+        width: 90%;
+        margin: 2% auto;
+        justify-content: space-around;
+    }
+    .card-holder {
+        width: 46%;
+    }
+    .card-holder:last-child {
+        margin-bottom: 0%;
+    }
+}
+
+
+/* -------------------Max width------------------------- */
+
+@media only screen and (min-width: 992px) {
+    .card-holder {
+        width: 29.33%;
+    }
+    .one,
+    .two,
+    .three,
+    .four,
+    .five {
+        margin-left: 35px;
+    }
+}

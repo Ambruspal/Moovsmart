@@ -1,0 +1,120 @@
+        html,
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        *,
+        *::before,
+        *::after {
+            box-sizing: inherit;
+        }
+        
+        h1,
+        h2,
+        h3 {
+            font-family: 'Nunito', sans-serif;
+        }
+        
+        p,
+        a {
+            font-family: 'Noto Sans', sans-serif;
+        }
+        
+        .mobile-header {
+            min-height: 70px;
+            background: #effad3;
+            position: relative;
+        }
+        
+        #sandwich {
+            width: 90px;
+            height: 50%;
+            padding: 20px 0 15px 50px;
+        }
+        
+        nav {
+            display: none;
+        }
+        
+        .svg-wrapper {
+            display: flex;
+            width: 150px;
+            position: absolute;
+            right: 50px;
+            top: 20px;
+        }
+        
+        .svg-wrapper div {
+            width: 60px;
+            height: 50%;
+            margin: 0 5px;
+            border-radius: 50px;
+        }
+        
+        .svg-wrapper div:first-child {
+            border: 1px solid blue;
+        }
+        
+        .svg-wrapper div:nth-child(2) {
+            border: 1px solid purple;
+        }
+        
+        .svg-wrapper div:last-child {
+            border: 1px solid red;
+        }
+        
+        .svg-wrapper div img {
+            display: block;
+            width: 80%;
+            margin: 5% auto;
+        }
+        
+        .tablet-header {
+            display: none;
+        }
+        
+        @media only screen and (min-width: 600px) {
+            #sandwich {
+                display: none;
+            }
+            .links {
+                display: block;
+            }
+            nav {
+                display: block;
+                display: flex;
+                width: 60%;
+                padding: 20px 20px;
+                margin: 0 20px;
+                justify-content: space-around;
+            }
+            a {
+                text-decoration: none;
+                color: teal;
+            }
+            a:hover {
+                color: white;
+                background: teal;
+            }
+            .tablet-header {
+                min-height: 250px;
+                display: block;
+                position: relative;
+                background-image: url("/img/header-cover.jpg");
+            }
+            .tablet-header div {
+                position: absolute;
+                background: rgba(0, 0, 0, 0.7);
+                width: 390px;
+                height: 160px;
+                right: 7px;
+                top: 7px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+                color: whitesmoke;
+            }
+        }

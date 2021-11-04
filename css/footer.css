@@ -1,0 +1,176 @@
+footer {
+    background: teal;
+    color: whitesmoke;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-auto-rows: minmax(50px, auto);
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-svg-holder {
+    width: 30px;
+    height: 30px;
+    background: whitesmoke;
+    border-radius: 50px;
+    padding: 1px;
+    margin-right: 35px;
+}
+
+footer img {
+    width: 70%;
+    height: 70%;
+    display: block;
+    margin: 2px auto;
+}
+
+.one,
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven,
+.eight,
+.nine,
+.ten {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.one {
+    grid-row: 1 / 3;
+}
+
+.two {
+    grid-row: 3 / 4;
+}
+
+.three {
+    grid-row: 4 / 5;
+}
+
+.four {
+    grid-row: 5 / 6;
+}
+
+.five {
+    grid-row: 6 / 7;
+}
+
+.six {
+    grid-row: 7 / 8;
+}
+
+.six-holder {
+    display: grid;
+}
+
+.six svg {
+    width: 50%;
+    height: 2px;
+    display: flex;
+}
+
+rect {
+    width: 100%;
+    height: 2px;
+    fill: whitesmoke;
+}
+
+.seven {
+    grid-row: 8 / 10;
+}
+
+.seven h3,
+.one h3 {
+    margin: 15px;
+}
+
+.eight {
+    grid-row: 10 / 11;
+}
+
+.nine {
+    grid-row: 11 / 12;
+}
+
+.ten {
+    grid-row: 12 / 13;
+}
+
+.ten p {
+    font-size: 8px;
+}
+
+.eight p,
+.nine p,
+.ten p,
+.two p,
+.three p,
+.four p,
+.five p {
+    margin: 10px 0;
+}
+
+.four a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 600px) {
+    .six-holder {
+        display: none;
+    }
+    footer {
+        grid-template-columns: 1fr 1fr;
+        align-items: flex-start;
+        padding-bottom: 15px;
+    }
+    .footer-left {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(6, 1fr);
+    }
+    .one,
+    .two,
+    .three,
+    .four,
+    .five {
+        justify-content: flex-start;
+        margin-left: 15px;
+    }
+    .one {
+        grid-area: 1/1/3/2;
+    }
+    .two {
+        grid-area: 3/1/4/2;
+    }
+    .three {
+        grid-area: 4/1/5/2;
+    }
+    .four {
+        grid-area: 5/1/6/2;
+    }
+    .five {
+        grid-area: 6/1/7/2;
+    }
+    .footer-right {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(6, 1fr);
+    }
+    .seven {
+        grid-area: 1/1/3/2;
+    }
+    .eight {
+        grid-area: 4/1/5/2;
+    }
+    .nine {
+        grid-area: 5/1/6/2;
+    }
+    .ten {
+        grid-area: 6/1/7/2;
+    }
+}

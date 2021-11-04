@@ -1,0 +1,57 @@
+/* ----------------------Body style----------------------- */
+
+.form-container {
+    width: 100%;
+    margin: 5% auto;
+}
+
+h1 {
+    color: whitesmoke;
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+
+.form-container h1 {
+    color: teal;
+}
+
+form {
+    width: 90%;
+    margin: 0 auto;
+    background: #effad3;
+    color: teal;
+    text-align: center;
+    padding: 2rem;
+}
+
+label,
+input,
+small {
+    display: block;
+    margin: 2% auto;
+}
+
+small {
+    color: red;
+    display: none;
+}
+
+input {
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+button {
+    width: 150px;
+    height: 30px;
+    border-radius: 0.7rem;
+    margin: 5% auto;
+    background: teal;
+    color: whitesmoke;
+}
+
+@media only screen and (min-width: 600px) {
+    .form-container {
+        width: 70%;
+    }
+}
